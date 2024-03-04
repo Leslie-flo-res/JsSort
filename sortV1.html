@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>JsSort</title>
+</head>
+
+<body>
+    <h1>Sorter</h1>
+    <form>
+        <input type="text" id="inputData1" placeholder="Add List Item" />
+
+        <input type="text" id="inputData2" placeholder="Add List Item" />
+
+        <input type="text" id="inputData3" placeholder="Add List Item" />
+
+        <input type="text" id="inputData4" placeholder="Add List Item" />
+
+        <button type="button" onclick="storeInputValue();">Add</button>
+
+        <!-- <button type="button" onclick="">Edit</button>-->
+        <button type="button" onclick="reset();">Reset</button>
+    </form>
+
+    <div>
+        <ul id="dataList"></ul>
+    </div>
+
+
+    <button><a id="btnEnd" href="numbSorter.html">Number Sorter</a></button>
+    <script>
+
+
+        function storeInputValue() {
+
+            let storeArray = [];
+            let data1 = document.getElementById("inputData1").value;
+            let data2 = document.getElementById("inputData2").value;
+            let data3 = document.getElementById("inputData3").value;
+            let data4 = document.getElementById("inputData4").value;
+
+
+            storeArray.push(data1, data2, data3, data4);
+
+
+            let sortedList = storeArray.sort()
+
+            let listDisplay = document.querySelector('#dataList').innerHTML =
+                sortedList.map(sortedList => `<li>${sortedList}</li>`)
+                    .join('');
+
+
+            console.log(sortedList);
+
+            function reset() {
+
+                sortedList.reset();
+                listDisplay = [];
+
+            }
+
+
+
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html> <!---purpose of this page is to see the first version of this sort project and its progression--->
