@@ -1,0 +1,24 @@
+*{
+    background-color: bisque;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px black solid;
+    margin-right :50%;
+    font-size: larger;
+}
+
+#dataSortList{
+    border:black 1px solid;
+    margin:50px 50px;
+    padding:250px 50px;
+    align-items: center;
+
+}
+#btnEnd{
+text-decoration: none;
+  color: black;
+    display: flex;
+    justify-content: flex-end;
+}

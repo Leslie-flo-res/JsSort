@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>JsSort</title>
+</head>
+
+<body>
+    <h1>Sorter</h1>
+
+    <input type="text" id="inputData" placeholder="Add List Item" />
+
+
+
+    <button type="button" onclick="addToList();">Add</button>
+    <button type="button" onclick="reset();">Reset</button>
+
+
+    <div>
+        <ul id="dataSortList"></ul>
+    </div>
+
+
+    <button><a id="btnEnd" href="numbSorter.html">Number Sorter</a></button>
+
+
+
+
+
+
+
+    <script>
+
+        let dataList = [];
+
+        function addToList() {
+
+            let input = document.getElementById("inputData").value;
+            dataList.push(input);
+            dataList.sort();
+            document.getElementById("inputData").value = ""
+            displayList();
+        }
+
+
+
+        function displayList() {
+            document.querySelector('#dataSortList').innerHTML =
+                dataList.map(dataList => `<li>${dataList}</li>`)
+                    .join('');
+            //from wespro code
+
+        }
+
+        function reset() {
+
+            dataList = [];
+            displayList();
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
