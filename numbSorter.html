@@ -13,16 +13,16 @@
 
 
 
-    <input type="text" id="inputNumb" placeholder="Enter number" />
+    <input type="text" class="inputBox" id="inputNumb" placeholder="Enter number" />
 
 
 
-    <button type="button" onclick="sortNumb();">Add To Sort</button>
+    <button type="button" onclick="numbList();">Add To Sort</button>
     <button type="button" onclick="reset();">Reset</button>
 
 
     <div>
-        <ul id="dataSortList"></ul>
+        <ul class="displayList"></ul>
     </div>
 
 
@@ -42,29 +42,25 @@
         function numbList() {
 
             let numData = document.getElementById("inputNumb").value;
-            numArrt.push(numData);
-            numArr.sort();
+            numArr.push(numData);
+            numArr.sort(compareNumb);
+
             document.getElementById("inputNumb").value = ""
-            displayList();
+            displayNumbList();
 
         };
 
 
+        function compareNumb(a, b) {
+            return a - b;
+
+        };// if b foes first , reverses order.
 
 
 
-        function sortNumb(a, b) {
-
-
-
-
-        };
-
-
-
-        function displayList() {
-            document.querySelector('#inputNumb').innerHTML =
-                numArr.map(dataList => `<li>${numArr}</li>`)
+        function displayNumbList() {
+            document.querySelector('.displayList').innerHTML =
+                numArr.map(numArr => `<li>${numArr}</li>`)
                     .join('');
             //from wespro code
 
@@ -74,7 +70,7 @@
         function reset() {
 
             numArr = [];
-            displayList();
+            displayNumbList();
         }
 
 

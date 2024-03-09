@@ -1,5 +1,5 @@
-* {
-    background-color: bisque;
+body {
+    margin: 0;
 }
 
 li {
@@ -9,13 +9,30 @@ li {
     font-size: larger;
 }
 
-#dataSortList {
+
+
+.inputBox {
+
+    display: flex;
+
+
+}
+
+
+
+
+.displayList {
     border: rgb(126, 60, 60) 1px solid;
     margin: 50px 50px;
     padding: 250px 50px;
     align-items: center;
 
 }
+
+
+
+
+
 
 #btnEnd {
     text-decoration: none;
