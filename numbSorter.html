@@ -10,6 +10,79 @@
 
 <body>
     <h1>Number Sort</h1>
+
+
+
+    <input type="text" id="inputNumb" placeholder="Enter number" />
+
+
+
+    <button type="button" onclick="sortNumb();">Add To Sort</button>
+    <button type="button" onclick="reset();">Reset</button>
+
+
+    <div>
+        <ul id="dataSortList"></ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let numArr = [];
+
+
+        function numbList() {
+
+            let numData = document.getElementById("inputNumb").value;
+            numArrt.push(numData);
+            numArr.sort();
+            document.getElementById("inputNumb").value = ""
+            displayList();
+
+        };
+
+
+
+
+
+        function sortNumb(a, b) {
+
+
+
+
+        };
+
+
+
+        function displayList() {
+            document.querySelector('#inputNumb').innerHTML =
+                numArr.map(dataList => `<li>${numArr}</li>`)
+                    .join('');
+            //from wespro code
+
+        }
+
+
+        function reset() {
+
+            numArr = [];
+            displayList();
+        }
+
+
+    </script>
+
+
+
+
     <button><a href="index.html">Letter Sorter</a></button>
 </body>
 
