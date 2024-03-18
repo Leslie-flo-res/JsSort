@@ -1,42 +1,16 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li {
-    list-style: none;
-    border-bottom: 1px black solid;
-    margin-right: 50%;
-    font-size: larger;
-}
-
-
-
-.inputBox {
-
+.container {
+    border: black solid 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
+    justify-content: center;
 
 
-}
-
-
-
-
-.displayList {
-    border: rgb(126, 60, 60) 1px solid;
-    margin: 50px 50px;
-    padding: 250px 50px;
-    align-items: center;
-
-}
-
-
-
-
-
-
-#btnEnd {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: flex-end;
 }
