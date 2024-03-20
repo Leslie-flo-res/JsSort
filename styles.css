@@ -4,13 +4,29 @@
     box-sizing: border-box;
 }
 
+
+
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
 .container {
-    border: black solid 1px;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    display: flex;
-    justify-content: center;
+}
 
+.box {
+    background-color: #f4f4f4;
+    border: 2px black solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    flex: 1;
+    padding: 10px;
 
 }
