@@ -13,11 +13,13 @@
     <div class="container">
         <div class="box">
             <h1>Sorter</h1>
+            <p>Quickly organize your list alphabetically by entering items and clicking 'Add'. Items will automatically
+                sort alphabetically. Hit 'Reset' to start fresh</p>
         </div>
 
-        <div class="box">
+        <div class="box input-container">
             <input type="text" class="inputBox " id="inputData" placeholder="Add List Item" />
-            <button type="button" onclick="addToList();">Add</button>
+            <button class="button" onclick="addToList();">Add</button>
         </div>
 
 
@@ -26,9 +28,9 @@
             <ul class="displayList box"></ul>
         </div>
 
-        <div class="box">
-            <button type="button" onclick="reset();">Reset</button>
-            <a id="btnEnd" href="numbSorter.html">Number Sorter</a>
+        <div class="box bBox ">
+            <button class="button" onclick="reset();">Reset</button>
+            <a class="button" href="numbSorter.html">Number Sorter</a>
         </div>
 
 

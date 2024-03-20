@@ -11,23 +11,27 @@
 <body>
 
     <div class="container">
-        <h1>Number Sort</h1>
+        <div class="box">
+            <h1>Number Sort</h1>
+            <p></p>
+        </div>
 
+        <div class="box input-container">
+            <input type="text" class="inputBox" id="inputNumb" placeholder="Enter number" />
+            <button type="button" onclick="numbList();" class="button">Add </button>
 
-
-        <input type="text" class="inputBox" id="inputNumb" placeholder="Enter number" />
-
-
-
-        <button type="button" onclick="numbList();">Add To Sort</button>
-        <button type="button" onclick="reset();">Reset</button>
-
-
-        <div>
-            <ul class="displayList"></ul>
         </div>
 
 
+        <div class="box">
+            <ul class="displayList"></ul>
+        </div>
+
+        <div class="box bBox">
+            <button type="button" class="button" onclick="reset();">Reset</button>
+            <a href="index.html" class="button">Letter Sorter</a>
+
+        </div>
 
     </div>
 
@@ -81,7 +85,6 @@
 
 
 
-    <button><a href="index.html">Letter Sorter</a></button>
 </body>
 
 </html>
